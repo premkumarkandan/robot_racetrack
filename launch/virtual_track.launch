@@ -20,7 +20,7 @@
   <arg name="p10" value="{x: -2.0, y: -1.0, z: 0.0}"/>
   <arg name="p11" value="{x: -1.0, y: 0.0, z: 0.0}"/>
   <!-- end of race track coordinates -->
-  <!-- end of race track coordinates -->
+  <!-- removing repetitive code -->
   <arg name="pts" value="points: [$(arg p1),$(arg p2),$(arg p3),$(arg p4),$(arg p5),$(arg p6),$(arg p7),$(arg p8),$(arg p9),$(arg p10),$(arg p11)]"/>  
   <arg name="marker" value="'{$(arg h), ns: 'MWS', id: 0, type: 4, action: 0, $(arg pose), $(arg scale), $(arg color), $(arg lt), $(arg pts)}'" />
   <node name="pub1" pkg="rostopic" type="rostopic" args="pub /shape visualization_msgs/Marker $(arg marker)"/>
